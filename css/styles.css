@@ -10,3 +10,54 @@
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
 }
+body {
+  background-color: var(--primery-white-color);
+  color: var(--primery-text-color);
+}
+/* logo */
+.logo {
+  color: var(--title-text-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* site-nav */
+ul {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/* auth-nav */
+.auth-nav .link {
+  color: var(--title-text-color);
+}
+.auth-nav .link:focus,
+.auth-nav .link:hover {
+  color: var(--accent-color);
+}
+/* hero */
+.hero .title {
+  color: var(--title-text-color);
+}
+/* button */
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+/* feature */
+.feature .title {
+  color: var(--title-text-color);
+}
+/* section */
+.section .title {
+  color: var(--title-text-color);
+}
+.section .white {
+  color: var(--primery-white-color);
+}

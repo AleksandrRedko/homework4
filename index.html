@@ -5,44 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- шапка -->
     <header>
       <nav>
-        <a href="./index.html">Web Studio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <a href="./index.html" class="logo">
+          <span class="logo-accent">Web</span> Studio</a
+        >
+        <ul class="site-nav">
+          <li><a href="" class="link">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="auth-nav">
         <li>
-          <a href="info@devstudio.com"
-            ><img src="./images/pochta.svg" alt="" />info@devstudio.com</a
+          <a href="info@devstudio.com" class="link"
+            ><img src="./images/pochta.svg" alt="" / ">info@devstudio.com</a
           >
         </li>
         <li>
-          <a href="+38 096 111 11 11"
-            ><img src="./images/smartphone.svg" alt="" />+38 096 111 11 11</a
+          <a href="+38 096 111 11 11" class="link"
+            ><img src="./images/smartphone.svg" alt="" /">+38 096 111 11 11</a
           >
         </li>
       </ul>
     </header>
     <!-- sec1 -->
     <main>
-      <section>
+      <!-- hero -->
+      <section class="hero">
         <!-- <img src="" alt="zastavka" width="1600" height="600" /> -->
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="button">Заказать услугу</button>
       </section>
       <!-- особенности -->
-      <section>
+      <section class="feature">
         <ul>
           <li>
             <img src="./images/antenna.svg" alt="antenna" />
-            <h3>Внимание к деталям</h3>
+            <h3 class="title">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
@@ -50,7 +54,7 @@
           </li>
           <li>
             <img src="./images/clock.svg" alt="clock" />
-            <h3>Пунктуальность</h3>
+            <h3 class="title">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
@@ -58,7 +62,7 @@
           </li>
           <li>
             <img src="./images/diagram.svg" alt="diagram" />
-            <h3>Планирование</h3>
+            <h3 class="title">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
@@ -66,7 +70,7 @@
           </li>
           <li>
             <img src="./images/astronaut.svg" alt="astronaut" />
-            <h3>Современные технологии</h3>
+            <h3 class="title">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -75,8 +79,8 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="section">
+        <h2 class="title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -85,7 +89,7 @@
               width="370"
               height="294"
             />
-            <p>Десктопные приложения</p>
+            <p class="white">Десктопные приложения</p>
           </li>
           <li>
             <img
@@ -94,7 +98,7 @@
               width="370"
               height="294"
             />
-            <p>Мобильные приложения</p>
+            <p class="white">Мобильные приложения</p>
           </li>
           <li>
             <img
@@ -103,13 +107,13 @@
               width="370"
               height="294"
             />
-            <p>Дизайнерские решения</p>
+            <p class="white">Дизайнерские решения</p>
           </li>
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="section">
+        <h2 class="title">Наша команда</h2>
         <ul>
           <li>
             <img
@@ -118,7 +122,7 @@
               width="270"
               height="260"
             />
-            <h3>Николай Кучеренко</h3>
+            <h3 class="title">Николай Кучеренко</h3>
             <p>Product Designer</p>
             <ul>
               <li><a href="" aria-label="instagram"></a></li>
@@ -134,7 +138,7 @@
               width="270"
               height="260"
             />
-            <h3>Ольга Иванова</h3>
+            <h3 class="title">Ольга Иванова</h3>
             <p>Frontend Developer</p>
             <ul>
               <li><a href="" aria-label="instagram"></a></li>
@@ -150,7 +154,7 @@
               width="270"
               height="260"
             />
-            <h3>Андрей Шевченко</h3>
+            <h3 class="title">Андрей Шевченко</h3>
             <p>Marketing</p>
             <ul>
               <li><a href="" aria-label="instagram"></a></li>
@@ -166,7 +170,7 @@
               width="270"
               height="260"
             />
-            <h3>Иван Николаев</h3>
+            <h3 class="title">Иван Николаев</h3>
             <p>UI Designer</p>
             <ul>
               <li><a href="" aria-label="instagram"></a></li>
@@ -177,8 +181,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Постоянные клиенты</h2>
+      <section class="section">
+        <h2 class="title">Постоянные клиенты</h2>
         <ul>
           <li>
             <a href=""><img src="./images/logo1.svg" alt="logo1" /></a>
@@ -203,7 +207,7 @@
     </main>
     <!-- footer -->
     <footer>
-      <a href="">Web Studio</a>
+      <a href="" class="logo"><span class="logo-accent">Web</span> Studio</a>
       <address>
         г. Киев, пр-т Леси Украинки, 26 <br />info@example.com <br />
         +38 099 111 11 11
