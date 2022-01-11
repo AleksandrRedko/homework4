@@ -45,8 +45,16 @@ ul {
   color: var(--title-text-color);
 }
 /* button */
-
 .button {
+  color: var(--title-text-color);
+  background-color: var(--primery-white-color);
+}
+.primery {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+.button .secondary:focus,
+.button .secondary:hover {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
 }
