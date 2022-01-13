@@ -15,10 +15,23 @@
 body {
   background-color: var(--primery-white-color);
   color: var(--primery-text-color);
+
+  font-family: Roboto, sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 /* logo */
 .logo {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -32,6 +45,10 @@ ul {
 }
 .site-nav .link {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -40,6 +57,10 @@ ul {
 /* auth-nav */
 .auth-nav .link {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .auth-nav .link:focus,
 .auth-nav .link:hover {
@@ -48,6 +69,12 @@ ul {
 /* hero */
 .hero .title {
   color: var(--title-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
 }
 /* button */
 .button {
@@ -57,6 +84,11 @@ ul {
 .primery {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
+  font-family: Roboto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
 }
 .button .secondary:focus,
 .button .secondary:hover {
@@ -66,13 +98,39 @@ ul {
 /* feature */
 .feature .title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 /* section */
+.section .title-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.section .title-profeshion {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 .section .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 .section .white {
   color: var(--primery-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
 }
 a {
   color: var(--primery-text-color);
@@ -83,4 +141,7 @@ a {
 }
 .footer .white {
   color: var(--primery-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
