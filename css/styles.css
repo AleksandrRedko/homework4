@@ -170,7 +170,9 @@ a {
 .footer .accent {
   color: var(--primery-white-color);
 }
-
+.footer .text-normal {
+  font-style: normal;
+}
 /* portfolio */
 .section .title-h {
   color: var(--title-text-color);
