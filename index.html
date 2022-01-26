@@ -5,41 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- шапка -->
     <header>
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="logo-accent">Web</span> Studio</a
-        >
-        <ul class="site-nav">
-          <li>
-            <a href="./index.html" class="link-current">Студия</a>
+      <div class="container main-nav">
+        <nav class="flex">
+          <a href="./index.html" class="logo">
+            <span class="logo-accent">Web</span> Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link-current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="item">
+            <a href="info@devstudio.com" class="link"
+              ><img src="./images/pochta.svg" alt="" />info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="./portfolio.html" class="link">Портфолио</a>
+          <li class="item">
+            <a href="+38 096 111 11 11" class="link"
+              ><img src="./images/smartphone.svg" alt="" />+38 096 111 11 11</a
+            >
           </li>
-          <li><a href="" class="link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="auth-nav">
-        <li>
-          <a href="info@devstudio.com" class="link"
-            ><img src="./images/pochta.svg" alt="" / ">info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="+38 096 111 11 11" class="link"
-            ><img src="./images/smartphone.svg" alt="" /">+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- sec1 -->
     <main>
@@ -51,166 +58,179 @@
       </section>
       <!-- особенности -->
       <section class="feature">
-        <ul>
-          <li>
-            <img src="./images/antenna.svg" alt="antenna" />
-            <h3 class="title">Внимание к деталям</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <img src="./images/clock.svg" alt="clock" />
-            <h3 class="title">Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <img src="./images/diagram.svg" alt="diagram" />
-            <h3 class="title">Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <img src="./images/astronaut.svg" alt="astronaut" />
-            <h3 class="title">Современные технологии</h3>
-            <p>
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="list">
+            <li class="item">
+              <img class="svg" src="./images/antenna.svg" alt="antenna" />
+              <h3 class="title">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="item">
+              <img class="svg" src="./images/clock.svg" alt="clock" />
+              <h3 class="title">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="item">
+              <img class="svg" src="./images/diagram.svg" alt="diagram" />
+              <h3 class="title">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="item">
+              <img class="svg" src="./images/astronaut.svg" alt="astronaut" />
+              <h3 class="title">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Чем мы занимаемся -->
       <section class="section">
-        <h2 class="title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/desktopnye.jpg"
-              alt="Десктопные приложения"
-              width="370"
-              height="294"
-            />
-            <p class="white">Десктопные приложения</p>
-          </li>
-          <li>
-            <img
-              src="./images/mobil.jpg"
-              alt="Мобильные приложения"
-              width="370"
-              height="294"
-            />
-            <p class="white">Мобильные приложения</p>
-          </li>
-          <li>
-            <img
-              src="./images/dizayn.jpg"
-              alt="Дизайнерские решения"
-              width="370"
-              height="294"
-            />
-            <p class="white">Дизайнерские решения</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/desktopnye.jpg"
+                alt="Десктопные приложения"
+                width="370"
+                height="294"
+              />
+              <p class="white">Десктопные приложения</p>
+            </li>
+            <li>
+              <img
+                src="./images/mobil.jpg"
+                alt="Мобильные приложения"
+                width="370"
+                height="294"
+              />
+              <p class="white">Мобильные приложения</p>
+            </li>
+            <li>
+              <img
+                src="./images/dizayn.jpg"
+                alt="Дизайнерские решения"
+                width="370"
+                height="294"
+              />
+              <p class="white">Дизайнерские решения</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наша команда -->
       <section class="section">
-        <h2 class="title">Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/nikolay.jpg"
-              alt="Николай Кучеренко"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-name">Николай Кучеренко</h3>
-            <p class="title-profeshion">Product Designer</p>
-            <ul>
-              <li><a href="" aria-label="instagram"></a></li>
-              <li><a href="" aria-label="twitter"></a></li>
-              <li><a href="" aria-label="facebook"></a></li>
-              <li><a href="" aria-label="linkeid"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/OLGA.jpg"
-              alt="Ольга Иванова"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-name">Ольга Иванова</h3>
-            <p class="title-profeshion">Frontend Developer</p>
-            <ul>
-              <li><a href="" aria-label="instagram"></a></li>
-              <li><a href="" aria-label="twitter"></a></li>
-              <li><a href="" aria-label="facebook"></a></li>
-              <li><a href="" aria-label="linkeid"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/ANDREY.jpg"
-              alt="Андрей Шевченко"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-name">Андрей Шевченко</h3>
-            <p class="title-profeshion">Marketing</p>
-            <ul>
-              <li><a href="" aria-label="instagram"></a></li>
-              <li><a href="" aria-label="twitter"></a></li>
-              <li><a href="" aria-label="facebook"></a></li>
-              <li><a href="" aria-label="linkeid"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/ivan.jpg"
-              alt="Иван Николаев"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-name">Иван Николаев</h3>
-            <p class="title-profeshion">UI Designer</p>
-            <ul>
-              <li><a href="" aria-label="instagram"></a></li>
-              <li><a href="" aria-label="twitter"></a></li>
-              <li><a href="" aria-label="facebook"></a></li>
-              <li><a href="" aria-label="linkeid"></a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+          <ul class="list">
+            <li>
+              <img
+                class="imagin"
+                src="./images/nikolay.jpg"
+                alt="Николай Кучеренко"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-name">Николай Кучеренко</h3>
+              <p class="title-profeshion">Product Designer</p>
+              <ul class="social-networks">
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twitter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkeid"></a></li>
+              </ul>
+            </li>
+            <li>
+              <img
+                class="imagin"
+                src="./images/OLGA.jpg"
+                alt="Ольга Иванова"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-name">Ольга Иванова</h3>
+              <p class="title-profeshion">Frontend Developer</p>
+              <ul class="social-networks">
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twitter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkeid"></a></li>
+              </ul>
+            </li>
+            <li>
+              <img
+                class="imagin"
+                src="./images/ANDREY.jpg"
+                alt="Андрей Шевченко"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-name">Андрей Шевченко</h3>
+              <p class="title-profeshion">Marketing</p>
+              <ul class="social-networks">
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twitter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkeid"></a></li>
+              </ul>
+            </li>
+            <li>
+              <img
+                class="imagin"
+                src="./images/ivan.jpg"
+                alt="Иван Николаев"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-name">Иван Николаев</h3>
+              <p class="title-profeshion">UI Designer</p>
+              <ul class="social-networks">
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twitter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkeid"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!-- постоянные клиенты -->
       <section class="section">
-        <h2 class="title">Постоянные клиенты</h2>
-        <ul>
-          <li>
-            <a href=""><img src="./images/logo1.svg" alt="logo1" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/logo2.svg" alt="logo2" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/logo3.svg" alt="logo3" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/logo4.svg" alt="logo4" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/logo5.svg" alt="logo5" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/logo6.svg" alt="logo6" /></a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">Постоянные клиенты</h2>
+          <ul class="list">
+            <li class="clients">
+              <a href=""><img src="./images/logo1.svg" alt="logo1" /></a>
+            </li>
+            <li class="clients">
+              <a href=""><img src="./images/logo2.svg" alt="logo2" /></a>
+            </li>
+            <li class="clients">
+              <a href=""><img src="./images/logo3.svg" alt="logo3" /></a>
+            </li>
+            <li class="clients">
+              <a href=""><img src="./images/logo4.svg" alt="logo4" /></a>
+            </li>
+            <li class="clients">
+              <a href=""><img src="./images/logo5.svg" alt="logo5" /></a>
+            </li>
+            <li class="clients">
+              <a href=""><img src="./images/logo6.svg" alt="logo6" /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
