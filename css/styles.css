@@ -117,17 +117,32 @@ p {
   text-decoration: none;
 }
 /* auth-nav */
+.aust__iteme::before,
 .aust__item::before {
+  display: inline-block;
+  align-items: center;
+
   content: "";
-  height: 16px;
+  height: 12px;
+  width: 16px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 10px;
   background-color: var(--primery-white-color);
 }
-.aust__item:nth-child(1)::before {
+.aust__item::before {
   background-image: url(../images/envelope.png);
 }
+
+.aust__iteme::before {
+  background-image: url(../images/smartphone.png);
+}
+.aust__item:hover::before,
+.aust__iteme:hover::before {
+  color: var(--accent-color);
+}
+
 .auth-nav {
   margin-left: auto;
   display: flex;
