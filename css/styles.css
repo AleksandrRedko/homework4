@@ -293,6 +293,16 @@ p {
   text-align: center;
 }
 /* наша команда */
+.our-team {
+  background-color: #f5f4fa;
+}
+.card {
+  background-color: var(--primery-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .imagin {
   margin-bottom: 30px;
 }
@@ -443,4 +453,32 @@ a {
 }
 .footer .text-normal {
   font-style: normal;
+}
+.svg-footer {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.network-footer {
+  display: flex;
+}
+.network-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+}
+
+.network-footer > li:not(:last-child) {
+  margin-right: 10px;
+}
+.network-footer > li {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.network-footer > li:hover {
+  background-color: var(--accent-color);
 }
