@@ -322,43 +322,55 @@ p {
   height: 44px;
   margin: 0px 32px 24px;
 }
-.networks-svg {
+.networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+.networks-link {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: var(--primery-white-color);
+}
+.networks-link:hover {
+  fill: var(--primery-white-color);
+  background-color: var(--accent-color);
+}
+.svg-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.networks-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-}
-
-.svg {
-  display: block;
-  /* width: 44px;
-  height: 44px; */
-  border-radius: 50%;
-
-  fill: #afb1b8;
-  background-color: var(--primery-white-color);
-}
-.svg:hover {
-  fill: var(--primery-white-color);
-  background-color: var(--accent-color);
-}
-
-.section .card {
-  width: 270px;
-  height: 422px;
 }
 /* постоянные клиенты */
 .clients {
+  display: block;
   width: 170px;
   height: 90px;
   margin: 0px;
   padding: 20px 63px;
-
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
+  fill: #afb1b8;
+}
+
+.clients:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.clients-svg {
+  display: block;
+  width: 44.27px;
+  height: 49.23px;
 }
 a {
   color: var(--primery-text-color);
