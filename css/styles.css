@@ -117,30 +117,8 @@ p {
   text-decoration: none;
 }
 /* auth-nav */
-.aust__iteme::before,
-.aust__item::before {
-  display: inline-block;
-  align-items: center;
-
-  content: "";
-  height: 12px;
-  width: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.aust-nav__svg {
   margin-right: 10px;
-  background-color: var(--primery-white-color);
-}
-.aust__item::before {
-  background-image: url(../images/envelope.png);
-}
-
-.aust__iteme::before {
-  background-image: url(../images/smartphone.png);
-}
-.aust__item:hover::before,
-.aust__iteme:hover::before {
-  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -153,7 +131,8 @@ p {
 }
 
 .auth-nav .link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -167,6 +146,7 @@ p {
 .auth-nav .link:focus,
 .auth-nav .link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* hero */
 
@@ -268,31 +248,18 @@ p {
 .feature p {
   margin: 0px;
 }
+.feature-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 
-.feature-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-
+  background: #f5f4fa;
   border-radius: 4px;
+}
 
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #f5f4fa;
-}
-.feature-item:nth-child(1)::before {
-  background-image: url(../images/antenna.png);
-}
-.feature-item:nth-child(2)::before {
-  background-image: url(../images/clock.png);
-}
-.feature-item:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
-}
-.feature-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.png);
-}
 .feature .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -351,12 +318,31 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 0px;
-
-  margin: 0px 32px 24px;
   width: 206px;
   height: 44px;
+  margin: 0px 32px 24px;
+}
+.networks-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.svg {
+  display: block;
+  /* width: 44px;
+  height: 44px; */
+  border-radius: 50%;
+
+  fill: #afb1b8;
+  background-color: var(--primery-white-color);
+}
+.svg:hover {
+  fill: var(--primery-white-color);
+  background-color: var(--accent-color);
 }
 
 .section .card {
