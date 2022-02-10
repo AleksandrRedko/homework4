@@ -63,6 +63,10 @@ body {
 .logo .logo-white {
   color: var(--primery-white-color);
 }
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
 /* утилиты */
 
 ul {
@@ -442,11 +446,20 @@ a {
   background-color: var(--background-footer);
   color: var(--footer-text-color);
 }
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 252px;
+}
 .footer .white {
+  display: block;
   color: var(--primery-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 20px;
 }
 .footer .accent {
   color: var(--primery-white-color);
@@ -481,4 +494,17 @@ a {
 }
 .network-footer > li:hover {
   background-color: var(--accent-color);
+}
+.button-footer::after {
+  display: inline-flex;
+  vertical-align: middle;
+
+  content: "";
+
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url(../images/icon-send.png);
+
+  margin-left: 10px;
 }
