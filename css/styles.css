@@ -189,6 +189,7 @@ p {
   min-width: 200px;
   text-align: center;
   margin-bottom: 50px;
+  border: none;
 
   color: var(--title-text-color);
   background-color: var(--primery-white-color);
@@ -223,6 +224,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: none;
 }
 
 .button .secondary:focus,
